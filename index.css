@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#game {
+  width: 600px;
+  height: 200px;
+  border-bottom: 2px solid black;
+  margin: 0 auto;
+}
+#dino {
+  width: 50px;
+  height: 50px;
+  background: url(./img/photo_2022-06-22_09-34-04.jpg);
+  background-size: 50px 50px;
+  position: relative;
+  top: 145px;
+}
+#cactus {
+  width: 30px;
+  height: 50px;
+  background: url(./img/designpb_003.webp);
+  background-size: 30px 50px;
+  position: relative;
+  top: 100px;
+  left: 550px;
+  animation: cactusmMov 1s infinite linear;
+}
+@keyframes cactusmMov {
+  0% {
+    left: 550px;
+  }
+  100% {
+    left: -20px;
+  }
+}
+.jump {
+  animation: jump 0.3s linear;
+}
+@keyframes jump {
+  0% {
+    top: 150px;
+  }
+  30% {
+    top: 80px;
+  }
+  50% {
+    top: 40px;
+  }
+  80% {
+    top: 80px;
+  }
+  100% {
+    top: 150px;
+  }
+}
